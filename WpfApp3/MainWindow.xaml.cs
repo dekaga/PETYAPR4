@@ -30,9 +30,16 @@ namespace WpfApp3
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Person employee = new Person(Name.Text, Surname.Text);
-            DateTime dob = Birthday.SelectedDate.Value;
-            MessageBox.Show($"Имя: {Person.FirstName}\nФамилия: {Person.LastName}\nВозраст: {employee.Age(dob)}");
+            if (Name != null && Surname != null && Birthday != null)
+            {
+                Person employee = new Person(Name.Text, Surname.Text);
+                DateTime dob = Birthday.SelectedDate.Value;
+                MessageBox.Show($"Имя: {Person.FirstName}\nФамилия: {Person.LastName}\nВозраст: {employee.Age(dob)}");
+            }
+        }
+        private void Evelina_Pavlovna(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

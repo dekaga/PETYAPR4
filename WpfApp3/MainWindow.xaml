@@ -41,14 +41,8 @@
     </Window.Resources>
 
     <Grid>
-        <StackPanel HorizontalAlignment="Center" Width="800">
-            <StackPanel.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF8918C1"/>
-                    <GradientStop Color="#FF24D882" Offset="1"/>
-                </LinearGradientBrush>
-            </StackPanel.Background>
-            <Label Content="Введите имя, фамилию и дату рождения сотрудника" Height="31" Width="362"/>
+        <StackPanel HorizontalAlignment="Center" Width="800" Background="#FF0C5D8A">
+            <Label FontSize="20" Content="Введите имя, фамилию и дату рождения сотрудника" Height="47" Width="500"/>
 
             <StackPanel Orientation="Horizontal">
                 <Label Content="Имя" Height="27" Width="39"/>
@@ -56,7 +50,6 @@
                 <Label Content="Фамилия"/>
                 <TextBox x:Name="Surname"/>
             </StackPanel>
-
             <Button Width="100" Height="20" Content="OK" Click="Button_Click"/>
             <DatePicker x:Name="Birthday"/>
         </StackPanel>
